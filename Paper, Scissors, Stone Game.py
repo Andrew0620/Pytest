@@ -8,7 +8,7 @@
 import random     # use random function
 Guess_list=("Rock","Paper","Scissors")
 win_list=[["Rock","Paper"],["Paper","Scissors"],["Scissors","Rock "]]
-Computer=random.choice(Guess_list)
+
 
 while True:
     Play = int(input("0.Rock, 1.Paper, 2.Scissors! What's your selection??\n"))
@@ -17,8 +17,8 @@ while True:
         continue
     Player = Guess_list[Play]
     Computer = random.choice(Guess_list)
-    print(Player)
-    print(Computer)
+    print('Player: ',Player)
+    print('Computer: ',Computer)
     if [Player,Computer] in win_list:
         print("\n You lose!!")
         break
